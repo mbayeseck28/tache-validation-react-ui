@@ -14,8 +14,8 @@ const Dashboard = () => {
   const COLORS = ['rgb(7, 15, 246)', '#00C49F', '#FFBB28', '#FF8042'];
   return (
 
-      <div class="text-center bg-white rounded mt-5">
-      <div className="App">
+      <div class="">
+      <div className="App text-center bg-white rounded mt-5">
         <PieChart width={400} height={400}>
           <Pie
              nameKey="name" 
