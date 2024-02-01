@@ -14,9 +14,8 @@ const Thead = ({thead}) => {
 const Tbody = ({tbody, actions}) => {
     return (
         <tbody className='bg-white'>
-            <tr className="text-gray-700">
                 {tbody.map((td, index) => (
-                    <>
+                <tr className="text-gray-700">
                     <td className="px-4 py-3 text-ms font-semibold border">{td.id}</td>
                     {td.article ? 
                         <td className="px-4 py-3 border">
@@ -32,22 +31,43 @@ const Tbody = ({tbody, actions}) => {
                         </div>
                     </td> : null
                     }
+                    {td.email ?
+                    <td className="px-4 py-5 text-center text-xl border">
+                        {td.email}
+                    </td> : null
+                    }
                     <td className="px-4 text-center py-3 text-md border">
                         <span className="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">{td.quantite}</span>
                     </td>
+                    
+                    {td.date ?
+                    <td className="px-4 py-5 text-center text-xl border">
+                        {td.date}
+                    </td> : null
+                    }
+                    {td.etat ?
+                    <td className="px-4 py-5  text-center text-xl border">
+                        {td.etat}
+                    </td> : null
+                    }
+                    {td.prix ?
+                    <td className="px-4 py-5  text-center text-xl border">
+                        {td.prix}
+                    </td> : null
+                    }
                     {td.statut ?
-                    <td class="px-4 py-5 flex justify-center text-xl">
+                    <td class="px-4 py-5 flex justify-center text-xl border">
                         {td.statut}
                     </td> : null
                     }
+                    
                     <td class="px-4 py-3 text-ms font-semibold border text-center">
                         {actions.map((action) => (
                             <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
                         ))}
                     </td>
-                    </>
+                </tr>
                 ))}
-            </tr>
         </tbody>
     )
 }
