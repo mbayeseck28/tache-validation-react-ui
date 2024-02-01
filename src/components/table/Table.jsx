@@ -14,9 +14,8 @@ const Thead = ({thead}) => {
 const Tbody = ({tbody, actions}) => {
     return (
         <tbody className='bg-white'>
-            <tr className="text-gray-700">
                 {tbody.map((td, index) => (
-                    <>
+                <tr className="text-gray-700">
                     <td className="px-4 py-3 text-ms font-semibold border">{td.id}</td>
                     {td.article ? 
                         <td className="px-4 py-3 border">
@@ -67,9 +66,8 @@ const Tbody = ({tbody, actions}) => {
                             <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
                         ))}
                     </td>
-                    </>
+                </tr>
                 ))}
-            </tr>
         </tbody>
     )
 }
