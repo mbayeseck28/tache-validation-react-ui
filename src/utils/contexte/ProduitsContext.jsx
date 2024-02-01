@@ -14,11 +14,20 @@ const ProduitContextProvider = ({ children }) => {
           id: Math.floor(Math.random()*10000000),
           article: {
             src: 'https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+            nom: "Chaussure Adidas",
+            desc: 'De beaux chaussures dins noirs'
+          },
+          quantite: 20,
+        },
+        {
+          id: Math.floor(Math.random()*10000000),
+          article: {
+            src: 'https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
             nom: "Dos Santos",
             desc: 'Un beau gas'
           },
           quantite: 50,
-        }
+        },
     ]
     
     const actions = [
