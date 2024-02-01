@@ -32,7 +32,7 @@ const Tbody = ({tbody, actions}) => {
                     </td> : null
                     }
                     {td.email ?
-                    <td class="px-4 py-5 text-center text-xl border">
+                    <td className="px-4 py-5 text-center text-xl border">
                         {td.email}
                     </td> : null
                     }
@@ -41,17 +41,17 @@ const Tbody = ({tbody, actions}) => {
                     </td>
                     
                     {td.date ?
-                    <td class="px-4 py-5 text-center text-xl border">
+                    <td className="px-4 py-5 text-center text-xl border">
                         {td.date}
                     </td> : null
                     }
                     {td.etat ?
-                    <td class="px-4 py-5  text-center text-xl border">
+                    <td className="px-4 py-5  text-center text-xl border">
                         {td.etat}
                     </td> : null
                     }
                     {td.prix ?
-                    <td class="px-4 py-5  text-center text-xl border">
+                    <td className="px-4 py-5  text-center text-xl border">
                         {td.prix}
                     </td> : null
                     }
