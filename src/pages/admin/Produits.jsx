@@ -41,8 +41,7 @@ const actions = [
     }
   ]
   return (
-    <div className='m-3 w-full'>
-      <h1 className='text-xl font-bold'>Produits</h1>
+    <div className='mr-5 my-3 w-full'>
       <div className=' w-full bg-blue-950 flex justify-between px-5 py-3 mt-3'>
         <h5 className='font-bold text-white pt-1'>Liste des produits</h5>
         <button className='btn bg-green-900 text-white rounded p-2'>Ajouter un nouveau employé</button>
