@@ -7,7 +7,7 @@ const Sidebare = () => {
   const { open } = useSidebare();
   return (
     <div
-      className={`bg-[#fff] min-h-screen ${
+      className={`bg-[#fff] hidden md:inline fixed min-h-screen ${
         open ? "sm:w-52" : "w-16"
       } duration-500 text-gray-800 px-4`}
     >

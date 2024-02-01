@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SidebareLink = ({menus, open}) => {
+const SidebareLink = ({ menus, open }) => {
   return (
     <div className="mt-4 flex flex-col gap-4 relative">
       {menus?.map((menu, i) => (
@@ -17,7 +17,7 @@ const SidebareLink = ({menus, open}) => {
           </div>
           <h2
             className={`whitespace-pre duration-500 ${
-              !open && "opacity-0 translate-x-28 overflow-hidden"
+              !open && "opacity-0 translate-x-20 overflow-hidden"
             }`}
           >
             {menu?.name}
