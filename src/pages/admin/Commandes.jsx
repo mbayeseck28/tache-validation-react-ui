@@ -3,13 +3,11 @@
 import React from 'react'
 import Table from '../../components/table/Table'
 import { TbEyeShare } from "react-icons/tb";
-import { MdEdit } from "react-icons/md";
-import { MdOutlineDelete } from "react-icons/md";
 
 
 const Commandes = () => {
   const table = [
-    'Référence', 'E-mail', 'Etat de la commande', 'Date', 'Nombres article', 'Prix total', 'Actions'
+    'Référence', 'E-mail','Nombres article', 'Date','Etat de la commande',  'Prix total', 'Actions'
 ]
   const table2 = [
     {
@@ -20,8 +18,9 @@ const Commandes = () => {
         desc: 'Un beau gas'
       },
       quantite: 50,
-      age: 22,
-      date: 6/4/2000
+      date: '6/4/2000',
+      etat:'En attente',
+      prix:"30 €"
     }
 ]
 
@@ -30,16 +29,6 @@ const actions = [
       icon: <TbEyeShare/>,
       color: 'bg-green-500',
       hanldleClick: () => console.log('Ca marche 1')
-    },
-    {
-      icon: <MdEdit />,
-      color: 'bg-orange-500',
-      hanldleClick: () => console.log('Ca marche 2')
-    },
-    {
-      icon: <MdOutlineDelete />,
-      color: 'bg-red-600',
-      hanldleClick: () => console.log('Ca marche 3')
     }
   ]
   return (

@@ -35,11 +35,28 @@ const Tbody = ({tbody, actions}) => {
                     <td class="px-4 text-center py-3 text-md border">
                         <span class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">{td.quantite}</span>
                     </td>
+                    
+                    {td.date ?
+                    <td class="px-4 py-5 text-center text-xl">
+                        {td.date}
+                    </td> : null
+                    }
+                    {td.etat ?
+                    <td class="px-4 py-5  text-center text-xl">
+                        {td.etat}
+                    </td> : null
+                    }
+                    {td.prix ?
+                    <td class="px-4 py-5  text-center text-xl">
+                        {td.prix}
+                    </td> : null
+                    }
                     {td.statut ?
                     <td class="px-4 py-5 flex justify-center text-xl">
                         {td.statut}
                     </td> : null
                     }
+                    
                     <td class="px-4 py-3 text-ms font-semibold border text-center">
                         {actions.map((action) => (
                             <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
