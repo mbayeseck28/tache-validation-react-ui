@@ -36,7 +36,7 @@ const Tbody = ({tbody, actions}) => {
                         <span class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">{td.quantite}</span>
                     </td>
                     {td.statut ?
-                    <td class="px-4 py-5 flex justify-center text-xl">
+                    <td class="px-4 py-5 flex justify-center text-xl border">
                         {td.statut}
                     </td> : null
                     }
