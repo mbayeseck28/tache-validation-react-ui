@@ -35,6 +35,11 @@ const Tbody = ({tbody, actions}) => {
                     <td class="px-4 text-center py-3 text-md border">
                         <span class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">{td.quantite}</span>
                     </td>
+                    {td.statut ?
+                    <td class="px-4 py-5 flex justify-center text-xl">
+                        {td.statut}
+                    </td> : null
+                    }
                     <td class="px-4 py-3 text-ms font-semibold border text-center">
                         {actions.map((action) => (
                             <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
