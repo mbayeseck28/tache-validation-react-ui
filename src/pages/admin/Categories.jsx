@@ -1,13 +1,22 @@
-import React from 'react'
-import useSidebare from '../../utils/hooks/useSidebare'
+import Table from "../../components/table/Table";
+import HeaderTable from "../../components/headerTable/HeaderTable";
+import { useContext } from "react";
+import { CategorieContext } from "../../utils/contexte/CategorieContext";
+import useSidebare from "../../utils/hooks/useSidebare";
 
 const Categories = () => {
-  const {open} = useSidebare()
-  return (
-    <div className={`${open ? "md:ml-[240px]" : "md:ml-[100px]"  } m-4  text-xl font-bold underline`}>
-      Categories
-    </div>
-  )
-}
+  const { table, table2, actions } = useContext(CategorieContext);
+  console.log("awa");
 
-export default Categories
+  return (
+    <div>
+      <HeaderTable
+        title="Liste categories"
+        nomAjout="Ajouter un nouveau categorie"
+      />
+      <Table thead={table} tbody={table2} actions={actions} />
+    </div>
+  );
+};
+
+export default Categories;

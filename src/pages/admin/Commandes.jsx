@@ -1,14 +1,13 @@
-import React from 'react'
-import useSidebare from '../../utils/hooks/useSidebare'
+import React from "react";
+import CommandeList from "../../components/commandes/CommandeList";
+import CommandeContextProvider from "../../utils/contexte/CommandeContext";
 
 const Commandes = () => {
-  const {open} = useSidebare()
   return (
-    <div className={`${open ? "md:ml-[240px]" : "md:ml-[100px]"  } m-4  text-xl font-bold underline`}>
-      Commandes
-    </div>
-  )
-}
+    <CommandeContextProvider>
+      <CommandeList />
+    </CommandeContextProvider>
+  );
+};
 
-
-export default Commandes
+export default Commandes;
