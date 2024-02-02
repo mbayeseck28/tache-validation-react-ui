@@ -12,8 +12,9 @@ const SidebareContextProvider = ({ children }) => {
   };
 
   const screenSize = () => {
-    if (smallScreen <= "767px") {
+    if ( open && smallScreen <= "767px") {
       setOpen(false)
+      console.log(open, "open");
     }
   }
 
@@ -22,6 +23,7 @@ const SidebareContextProvider = ({ children }) => {
     toggleSidebare,
     screenSize,
     setSmallScreen,
+    smallScreen,
   };
 
   return <SidebareContext.Provider value={value}>{children}</SidebareContext.Provider>;

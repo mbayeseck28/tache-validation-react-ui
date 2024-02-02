@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useSidebare from "../../utils/hooks/useSidebare";
 
 const SidebareLink = ({ menus, open }) => {
+  const {screenSize} = useSidebare()
   return (
     <div className="mt-4 flex flex-col gap-4 relative">
       {menus?.map((menu, i) => (
         <Link
           to={menu?.link}
+          onClick={screenSize}
           key={i}
-          className={` ${
-            menu?.margin && "mt-"
-          } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-100 rounded-md`}
+          className={` group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-100 rounded-md`}
         >
           <div className={"text-xl"} size={20}>
             {menu?.icon}
