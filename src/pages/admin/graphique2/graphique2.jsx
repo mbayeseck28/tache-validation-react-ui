@@ -2,7 +2,7 @@ import React from "react";
 import { PieChart, Pie, Cell, Legend } from "recharts";
 
 
-const Dashboard = () => {
+const Graphique2 = () => {
 
   const data = [
     { name: "Facebook", users: 2000000000 },
@@ -35,10 +35,10 @@ const Dashboard = () => {
           <Legend />
         </PieChart>
       </div>
-      <p class="border-left-4">Graphique</p>
+      {/* <p class="border-left-4">Graphique</p> */}
     </div>
   )
 }
 
-export default Dashboard
+export default Graphique2;
 
