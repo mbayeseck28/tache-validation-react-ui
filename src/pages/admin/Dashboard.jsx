@@ -2,7 +2,7 @@ import React from 'react'
 import Cards from '../../components/cards-et-filtre/Cards'
 import Filtre from '../../components/cards-et-filtre/Filtre'
 import Revenue from './Revenue'
-import Graphique2 from './graphique2/Graphique2'
+// import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
   
@@ -23,7 +23,7 @@ const Dashboard = () => {
         <Revenue />
       </div>
       <div>
-        <Graphique2 />
+        {/* <Graphique2 /> */}
       </div>
     </div>
     
