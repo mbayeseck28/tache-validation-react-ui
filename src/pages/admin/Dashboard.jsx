@@ -5,8 +5,8 @@ import Filtre from '../../components/cards-et-filtre/Filtre'
 
 const Dashboard = () => {
   return (
-    <div className='m-3 text-xl font-bold underline'>
-    <div className='m-3 text-xl container font-bold '>
+    <div className='my-3 text-xl font-bold '>
+    <div className='my-3 text-xl container font-bold '>
       <div className='flex justify-between'>
       <div>Dashboard</div>
       <Filtre/>
