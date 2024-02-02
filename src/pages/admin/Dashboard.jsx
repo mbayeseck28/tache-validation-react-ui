@@ -1,27 +1,37 @@
 import React from 'react'
-import ListeProd from './ListeProd'
-import Graphique2 from './graphique2/graphique2'
 import Cards from '../../components/cards-et-filtre/Cards'
+import ListeProd from './ListeProd'
 import Filtre from '../../components/cards-et-filtre/Filtre'
+import Revenue from './Revenue'
+import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
   
   return (
-    <div className='m-3 text-xl font-bold underline'>
-    <div className='container m-3 text-xl font-bold '>
-      <div className='flex justify-between'>
-      <div>Dashboard</div>
-      <Filtre/>
-      </div>
-      
+    
 
-      <Cards/>
-      
+
+    <div className='my-3'>
+      <div className=' text-xl font-bold underline'>Dashboard</div>
+      <div className='m-3 text-xl container font-bold '>
+        <div className='flex justify-between'>
+          <Filtre/>
+        </div>
+        <div>
+          <Cards/>
+        </div> 
+      </div>
+    <div className='flex justify-between'>
+      <div>
+        <Revenue />
+      </div>
+      <div>
+        <Graphique2 />
+      </div>
+      <ListeProd />
+
     </div>
-    <div>
-    <Graphique2/>
-    <ListeProd />
-    </div>
+    
     </div>
   )
 
