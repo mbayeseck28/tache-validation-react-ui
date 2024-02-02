@@ -1,10 +1,12 @@
 import React from 'react'
+import ProduitContextProvider from '../../utils/contexte/ProduitsContext'
+import ProduitsAdmin from '../../components/produits/ProduitsAdmin'
 
 const Produits = () => {
   return (
-    <div className='m-3 text-xl font-bold underline'>
-      Produits
-    </div>
+    <ProduitContextProvider>
+      <ProduitsAdmin />
+    </ProduitContextProvider>
   )
 }
 
