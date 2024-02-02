@@ -6,10 +6,10 @@ import useSidebare from "../../utils/hooks/useSidebare";
 
 const Categories = () => {
   const { table, table2, actions } = useContext(CategorieContext);
-  const {open} = useSidebare()
+  const { open } = useSidebare();
 
   return (
-    <div className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"  } m-4`}>
+    <div className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4`}>
       <HeaderTable
         title="Liste categories"
         nomAjout="Ajouter un nouveau categorie"
