@@ -11,7 +11,7 @@ const Categories = () => {
   console.log('awa');
 
   return (
-    <div className='m-3 w-full'>
+    <div className='mr-5 my-3 w-full'>
       <HeaderTable title= "Liste categories" nomAjout='Ajouter un nouveau categorie' />
       <Table thead={table} tbody={table2} actions={actions} />
     </div>
