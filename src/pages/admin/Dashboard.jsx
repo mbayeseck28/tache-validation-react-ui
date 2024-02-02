@@ -5,19 +5,19 @@ import Revenue from './Revenue'
 import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
+  
   return (
-
-
-    <div className='m-3 text-xl font-bold underline'>
-    <div className='m-3 text-xl container font-bold '>
-      <div className='flex justify-between'>
-        <Filtre/>
+    <div className='my-3'>
+      <div className=' text-xl font-bold underline'>Dashboard</div>
+      <div className='m-3 text-xl container font-bold '>
+        <div className='flex justify-between'>
+          <Filtre/>
+        </div>
+        <div>
+          <Cards/>
+        </div> 
       </div>
-      
-      <Cards/>
-      
-    </div>
-    <div className='flex'>
+    <div className='flex justify-between'>
       <div>
         <Revenue />
       </div>

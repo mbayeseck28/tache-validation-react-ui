@@ -35,7 +35,7 @@ const Graphique2 = () => {
           <Legend />
         </PieChart>
       </div>
-      <p class="border-left-4">Graphique</p>
+      {/* <p class="border-left-4">Graphique</p> */}
     </div>
   )
 }
