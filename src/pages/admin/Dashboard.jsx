@@ -7,6 +7,7 @@ import Graphique2 from './graphique2/Graphique2'
 const Dashboard = () => {
   
   return (
+
     <div className='my-3'>
       <div className=' text-xl font-bold underline'>Dashboard</div>
       <div className='m-3 text-xl container font-bold '>
