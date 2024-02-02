@@ -6,10 +6,9 @@ const Dashboard = () => {
   
   return (
     <>
-    <div className='m-3 text-xl font-bold underline'>
-      Dashboard
+    <div className="flex gap-6 bg-gray-100 App">
       <ListeProd/>
-      </div>
+    </div>
     </>
   )
 }

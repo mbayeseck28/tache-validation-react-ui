@@ -1,12 +1,12 @@
 import React from 'react'
-import ProduitContextProvider from '../../utils/contexte/ProduitsContext'
 import ListeProdDashboard from '../../components/listeProd/ListeProdDashboard'
+import ListeContextProvider from '../../utils/contexte/ListeContexte'
 
 const ListeProd = () => {
   return (
-    <ProduitContextProvider>
+    <ListeContextProvider>
         <ListeProdDashboard />
-    </ProduitContextProvider>
+    </ListeContextProvider>
   )
 }
 
