@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import Categories from "./Categories";
 import Produits from "./Produits";
 import Commandes from "./Commandes";
+import AdminConnexion from "./connexion/AdminConnexion";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Route path="/categories" element={<Categories />} />
         <Route path="/produits" element={<Produits />} />
         <Route path="/commandes" element={<Commandes />} />
+        <Route path="/admin" element={<AdminConnexion />}/>
       </Routes>
     </div>
   );
