@@ -5,6 +5,7 @@ import Filtre from '../../components/cards-et-filtre/Filtre'
 import Revenue from './Revenue'
 import Graphique2 from './graphique2/graphique2'
 
+
 const Dashboard = () => {
   
   return (
@@ -26,7 +27,7 @@ const Dashboard = () => {
         <Revenue />
       </div>
       <div>
-        <Graphique2 />
+        <Graphique2 /> 
       </div>
       <ListeProd />
 
