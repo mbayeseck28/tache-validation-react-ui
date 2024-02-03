@@ -1,7 +1,10 @@
 import React from "react";
 import { PieChart, Legend, Pie, Cell } from "recharts";
 
-const Dashboard = () => {
+
+const Graphique2 = () => {
+
+
   const data = [
     { name: "Value1", users: 2000000000 },
     { name: "Value2", users: 1500000000 },
@@ -16,10 +19,10 @@ const Dashboard = () => {
       {/* <div style={{ position: "relative" }}>
        
       </div> */}
-      <div className="pie-chart-container bg-white">
+      <div className="pie-chart-container ">
         <PieChart width={400} height={400}>
         <Legend
-          verticalAlign="top" // Cette propriété aligne la légende verticalement en haut
+          verticalAlign="top" 
         />
           <Pie
             nameKey="name"
@@ -40,9 +43,15 @@ const Dashboard = () => {
           </Pie>
         </PieChart>
       </div>
+
       <p className="border-left-4 mt-3">Graphique</p>
     </div>
   );
 };
 
-export default Dashboard;
+  
+
+export default Graphique2;
+
+
+
