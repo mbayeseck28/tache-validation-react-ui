@@ -2,9 +2,9 @@ import React from 'react'
 import useSidebare from '../../utils/hooks/useSidebare'
 
 const Dashboard = () => {
-  const {open} = useSidebare()
+  const {open, smallScreen} = useSidebare()
   return (
-    <div className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"  } m-4  text-xl font-bold underline`}>
+    <div className={`${open && smallScreen <= 767 ? "md:ml-[85px]" : "md:ml-[225px]"  } m-4  text-xl font-bold underline`}>
       Dashboard
     </div>
   )
