@@ -16,7 +16,7 @@ const Dashboard = () => {
       <Cards/>
       
     </div>
-    <div>
+    <div className="flex">
     <Graphique2/>
     </div>
     </div>
