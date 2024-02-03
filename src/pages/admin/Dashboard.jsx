@@ -1,13 +1,33 @@
-import React from 'react'
-import useSidebare from '../../utils/hooks/useSidebare'
+import React from "react";
+import Cards from "../../components/cards-et-filtre/Cards";
+import Filtre from "../../components/cards-et-filtre/Filtre";
+import Revenue from "./Revenue";
+import useSidebare from "../../utils/hooks/useSidebare";
+import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
-  const {open, smallScreen} = useSidebare()
-  return (
-    <div className={`${open && smallScreen <= 767 ? "md:ml-[85px]" : "md:ml-[225px]"  } m-4  text-xl font-bold underline`}>
-      Dashboard
-    </div>
-  )
-}
+  const { open } = useSidebare();
 
-export default Dashboard
+  return (
+    <div
+      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4 `}
+    >
+      <div className=" text-xl container font-bold ">
+        <div className="flex justify-end">
+          <Filtre />
+        </div>
+        <div>
+          <Cards />
+        </div>
+      </div>
+      <div className="flex justify-between">
+        <div>
+          <Revenue />
+        </div>
+        <div><Graphique2 /></div>
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;
