@@ -10,8 +10,8 @@ const useSidebare = () => {
         
         setSmallScreen(window.innerWidth)
         console.log(smallScreen, open);
-        // screenSize()
-    }, [])
+        screenSize()
+    }, [open, setSmallScreen, screenSize, smallScreen])
 
     return useSidebare
 }
