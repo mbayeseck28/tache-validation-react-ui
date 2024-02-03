@@ -1,11 +1,33 @@
-import React from 'react'
+import React from "react";
+import Cards from "../../components/cards-et-filtre/Cards";
+import Filtre from "../../components/cards-et-filtre/Filtre";
+import Revenue from "./Revenue";
+import useSidebare from "../../utils/hooks/useSidebare";
+import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
-  return (
-    <div className='m-3 text-xl font-bold underline'>
-      Dashboard
-    </div>
-  )
-}
+  const { open } = useSidebare();
 
-export default Dashboard
+  return (
+    <div
+      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4 `}
+    >
+      <div className=" text-xl container font-bold ">
+        <div className="flex justify-end">
+          <Filtre />
+        </div>
+        <div>
+          <Cards />
+        </div>
+      </div>
+      <div className="flex justify-between">
+        <div>
+          <Revenue />
+        </div>
+        <div><Graphique2 /></div>
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;

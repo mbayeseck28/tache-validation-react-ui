@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import CommandeList from "../../components/commandes/CommandeList";
+import CommandeContextProvider from "../../utils/contexte/CommandeContext";
 
 const Commandes = () => {
   return (
-    <div className='m-3 text-xl font-bold underline'>
-      Commandes
-    </div>
-  )
-}
+    <CommandeContextProvider>
+      <CommandeList />
+    </CommandeContextProvider>
+  );
+};
 
-export default Commandes
+export default Commandes;
