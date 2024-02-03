@@ -3,7 +3,7 @@ import Cards from '../../components/cards-et-filtre/Cards'
 import ListeProd from './ListeProd'
 import Filtre from '../../components/cards-et-filtre/Filtre'
 import Revenue from './Revenue'
-import Graphique2 from './graphique2/Graphique2'
+import Graphique2 from './graphique2/graphique2'
 
 const Dashboard = () => {
   
