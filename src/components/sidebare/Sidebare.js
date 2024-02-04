@@ -7,13 +7,19 @@ const Sidebare = () => {
   const { open,  smallScreen } = useSidebare();
 
   return (
-    <>{ open && smallScreen <= 767 ? "" :  <div 
+    <>
+      { open && smallScreen <= 767 ? "" :  
+      <div
       className={`bg-[#fff] fixed min-h-screen ${
         open ? "sm:w-52" : "w-16"
-      } duration-500 text-gray-800 px-4`}
+      } duration-500 text-gray-800 px-4 ${
+        smallScreen <= 767 ? "hidden" : "visible" 
+      }`}
     >
-      <SidebareLink menus={menus} open={open} />
-    </div> }</>
+        <SidebareLink menus={menus} open={open} />
+      </div> 
+      }
+    </>
   );
 };
 

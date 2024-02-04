@@ -7,6 +7,7 @@ import SidebareContextProvider from "../../utils/contexte/SidebareContext";
 import Commandes from "./Commandes";
 import Dashboard from "./Dashboard";
 import Produits from "./Produits";
+import DetailsCategorieUseProvider from "../../components/categories/DetailsCategorieUseProvider";
 
 
 function IsLogin() {
@@ -21,6 +22,7 @@ function IsLogin() {
             <Route path="/categories" element={<CategoriesAdmin />} />
             <Route path="/produits" element={<Produits />} />
             <Route path="/commandes" element={<Commandes />} />
+            <Route path="/categories/DetailsCategorie" element={<DetailsCategorieUseProvider />} />
           </Routes>
         </div>
       </SidebareContextProvider>
