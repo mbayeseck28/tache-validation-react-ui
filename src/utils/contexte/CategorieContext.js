@@ -3,6 +3,7 @@ import { TbEyeShare } from "react-icons/tb";
 import { MdEdit } from "react-icons/md";
 import { MdOutlineDelete } from "react-icons/md";
 import { BsEyeSlashFill } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 const CategorieContext = createContext();
 
@@ -25,16 +26,23 @@ export default function CategorieContextProvider({children}) {
         }
     ]
     
+  const navigate = useNavigate();
+
     const actions = [
         {
           icon: <TbEyeShare/>,
           color: 'bg-green-500',
-          hanldleClick: () => console.log('Ca marche 1')
+          hanldleClick: () => {
+            console.log('Ca marche 1')
+            navigate("/admin/categories/DetailsCategorie");
+          }
         },
         {
           icon: <MdEdit />,
           color: 'bg-orange-500',
-          hanldleClick: () => console.log('Ca marche 2')
+          hanldleClick: () => {
+            console.log('Ca marche 2')
+          }
         },
         {
           icon: <MdOutlineDelete />,
