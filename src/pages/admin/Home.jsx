@@ -8,7 +8,7 @@ import CategoriesAdmin from "../../components/categories/CategoriesAdmin";
 
 const Home = () => {
   return (
-    <div className="App pt-[70px] h-screen  gap-6 bg-gray-100">
+    <div className="App pt-[70px] min-h-screen  gap-6 ">
       <Sidebare  />
       <Routes>
         <Route path="/" element={<Dashboard />} />

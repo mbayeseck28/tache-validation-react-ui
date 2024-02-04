@@ -19,7 +19,7 @@ function Revenue() {
   };
 
   return (
-        <div className="revenue">
+        <div className="revenue ">
           <h2 className="text-bold">Revenue Breackdown</h2>
           <h6>Compared to previous year</h6>
           <Bar data={data} />

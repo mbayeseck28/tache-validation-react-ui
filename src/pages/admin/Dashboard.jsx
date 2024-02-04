@@ -3,14 +3,14 @@ import Cards from "../../components/cards-et-filtre/Cards";
 import Filtre from "../../components/cards-et-filtre/Filtre";
 import Revenue from "./Revenue";
 import useSidebare from "../../utils/hooks/useSidebare";
-import Graphique2 from './graphique2/Graphique2'
+// import Graphique2 from './graphique2/Graphique2'
 
 const Dashboard = () => {
   const { open } = useSidebare();
 
   return (
     <div
-      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4 `}
+      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4  `}
     >
       <div className=" text-xl container font-bold ">
         <div className="flex justify-end">
@@ -21,10 +21,10 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div>
+        <div className="">
           <Revenue />
         </div>
-        <div><Graphique2 /></div>
+        {/* <div><Graphique2 /></div> */}
       </div>
     </div>
   );
