@@ -11,8 +11,6 @@ import AdminConnexion from "./connexion/AdminConnexion";
 import CategoriesAdmin from "../../components/categories/CategoriesAdmin";
 
 
-import AdminConnexion from "./connexion/AdminConnexion";
-import CategoriesAdmin from "../../components/categories/CategoriesAdmin";
 
 
 const Home = () => {
