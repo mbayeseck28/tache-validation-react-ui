@@ -1,16 +1,15 @@
-import Header from "./components/header";
+
+import { Route, Routes } from "react-router-dom";
 import AdminConnexion from "./pages/admin/connexion/AdminConnexion";
-import Home from "./pages/admin/Home";
-import SidebareContextProvider from "./utils/contexte/SidebareContext";
+import IsLogin from "./pages/admin/IsLogin";
 
 function App() {
   return (
     <div className="App min-h-screen">
-      <SidebareContextProvider>
-        <Header />
-        <Home />
-        <AdminConnexion />
-      </SidebareContextProvider>
+      <Routes>
+        <Route path="/" element={<AdminConnexion />} />
+        <Route path="/admin/*" element={<IsLogin />} />
+      </Routes>
     </div>
   );
 }

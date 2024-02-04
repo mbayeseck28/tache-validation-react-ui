@@ -4,11 +4,8 @@ import Sidebare from "../../components/sidebare/Sidebare";
 import Dashboard from "./Dashboard";
 import Produits from "./Produits";
 import Commandes from "./Commandes";
-<<<<<<< HEAD
 import AdminConnexion from "./connexion/AdminConnexion";
-=======
 import CategoriesAdmin from "../../components/categories/CategoriesAdmin";
->>>>>>> b8e2bd93916a0bb83dc815f6fb270e81d90ffe64
 
 const Home = () => {
   return (

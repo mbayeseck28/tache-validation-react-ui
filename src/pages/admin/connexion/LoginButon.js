@@ -1,14 +1,15 @@
 import React from "react";
 import BoutonAdmin from "./BoutonAdmin";
+import IsLogin from "../IsLogin";
 
-const LoginButon = ({ onClick, className }) => {
+const LoginButon = ({className }) => {
   return (
     <div>
       <BoutonAdmin
         type="submit"
         className={className}
         children="Se connecter"
-        onClick={onClick}
+       
       />
     </div>
   );
