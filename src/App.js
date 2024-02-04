@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App min-h-screen">
       <Routes>
-        <Route path="/" element={<AdminConnexion />} />
+        <Route path="/admin" element={<AdminConnexion />} />
         <Route path="/admin/*" element={<IsLogin />} />
       </Routes>
     </div>
