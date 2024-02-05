@@ -26,6 +26,7 @@ const Dashboard = () => {
         </div>
       </div>
 
+
       <div className='flex w-full'>
         <div className='w-[2/4]'>
           <Revenue />
