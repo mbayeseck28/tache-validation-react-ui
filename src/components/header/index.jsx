@@ -9,7 +9,7 @@ const Header = () => {
   const { toggleSidebare } = useSidebare();
 
   return (
-    <header className="bg-gray-800 fixed w-full m-0 flex justify-between text-gray-100 w-100 px-5 py-3">
+    <header className="z-[10] bg-gray-800 fixed w-full m-0 flex justify-between text-gray-100 w-100 px-5 py-3">
       <FaBars
         className="cursor-pointer mt-0.75"
         size={26}
