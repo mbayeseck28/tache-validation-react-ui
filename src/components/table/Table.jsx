@@ -65,7 +65,8 @@ const Tbody = ({tbody, actions}) => {
                     </td> : null
                     }
                     
-                    {td.actions ?
+                    
+                    {actions ?
                         <td class="px-4 py-3 text-ms font-semibold border text-center">
                             {actions.map((action) => (
                                 <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
