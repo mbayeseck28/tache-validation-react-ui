@@ -15,11 +15,8 @@ const Graphique2 = () => {
   const COLORS = ["rgb(7, 15, 246)", "#00C49F", "#FFBB28", "#FF8042"];
 
   return (
-    <div className="text-center mt-5">
-      {/* <div style={{ position: "relative" }}>
-       
-      </div> */}
-      <div className="pie-chart-container ">
+    <div>
+      <div className="pie-chart-container bg-white rounded">
         <PieChart width={400} height={400}>
         <Legend
           verticalAlign="top" 
@@ -43,8 +40,6 @@ const Graphique2 = () => {
           </Pie>
         </PieChart>
       </div>
-
-      <p className="border-left-4 mt-3">Graphique</p>
     </div>
   );
 };
