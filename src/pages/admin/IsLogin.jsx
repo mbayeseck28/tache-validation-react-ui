@@ -9,6 +9,7 @@ import Dashboard from "./Dashboard";
 import Produits from "./Produits";
 import DetailsCategorieUseProvider from "../../components/categories/DetailsCategorieUseProvider";
 import DetailsProduits from "../../components/produits/DetailsProduits";
+import Profil from "./Profil";
 
 
 function IsLogin() {
@@ -16,10 +17,11 @@ function IsLogin() {
     <div className="App min-h-screen">
       <SidebareContextProvider>
         <Header />
-        <div className="App pt-[70px] h-screen  gap-6 bg-gray-100">
+        <div className="App pt-[56px] h-screen  gap-6 bg-gray-100">
           <Sidebare />
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/profil" element={<Profil />} />
             <Route path="/categories" element={<CategoriesAdmin />} />
             <Route path="/categories/DetailsCategorie" element={<DetailsCategorieUseProvider />} />
             <Route path="/produits/*" element={<Produits />} />

@@ -27,7 +27,7 @@ const AdminConnexion = () => {
 
 
   return (
-    <div class="w-full h-full flex justify-center bg-slate-300">
+    <div class="w-full h-screen flex justify-center bg-slate-300">
       
         <form onSubmit={handleSubmit} class="bg-gray-800 w-1/2 min-w-80 max-w-24  hover:shadow-black shadow-md mx-auto mt-3 rounded px-8 pt-6 pb-8 mb-4 ">
             <Title className='text-2x1 font-semibold mb-4 text-center text-white' children='Page Connexion'/>

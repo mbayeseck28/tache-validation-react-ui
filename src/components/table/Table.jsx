@@ -22,7 +22,7 @@ const Tbody = ({tbody, actions}) => {
                         <div className="flex items-center text-sm">
                         <div className="md:relative w-8 h-8 mr-3 rounded-full md:block">
                             <img className="object-cover w-full h-full rounded-full" src={td.article.src} alt="" loading="lazy" />
-                            <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                            <div className="md:absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                         </div>
                         <div>
                             <p className="font-semibold text-black">{td.article.nom}</p>
@@ -39,11 +39,7 @@ const Tbody = ({tbody, actions}) => {
                     <td className="px-4 py-3 text-center border text-md">
                         <span className="px-2 py-1 font-semibold leading-tight text-orange-700 bg-gray-100 rounded-sm">{td.quantite}</span>
                     </td>
-                    {td.prix ?
-                        <td className="px-4 py-5 text-xl text-center border">
-                            {td.prix}
-                        </td> : null
-                        }
+                    
                     {td.date ?
                     <td className="px-4 py-5 text-xl text-center border">
                         {td.date}
@@ -64,8 +60,6 @@ const Tbody = ({tbody, actions}) => {
                         {td.statut}
                     </td> : null
                     }
-                    
-                    
                     {actions ?
                         <td class="px-4 py-3 text-ms font-semibold border text-center">
                             {actions.map((action) => (
@@ -81,7 +75,7 @@ const Tbody = ({tbody, actions}) => {
 
 const Table = ({thead, tbody, actions}) => {
   return (
-    <section className="container mx-auto font-mono">
+    <section className=" mx-  font-mono">
         <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
           <div className="w-full overflow-x-auto">
             <table className="w-full">
