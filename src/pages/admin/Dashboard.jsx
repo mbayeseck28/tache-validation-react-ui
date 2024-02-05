@@ -27,10 +27,10 @@ const Dashboard = () => {
       </div>
 
       <div className='flex w-full'>
-        <div className='basis-[50%]'>
+        <div className='w-[2/4]'>
           <Revenue />
         </div>
-        <div className='basis-[50%]'>
+        <div className='w-[2/4]'>
           <Graphique2 />
         </div>
       </div>
