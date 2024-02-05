@@ -2,10 +2,12 @@ import React, { createContext } from "react";
 import { TbEyeShare } from "react-icons/tb";
 import { MdEdit } from "react-icons/md";
 import { MdOutlineDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 export const ProduitsContext = createContext();
 
 const ProduitContextProvider = ({ children }) => {
+  const navigate = useNavigate()
     const table = [
         'id', 'Article', 'Quantité', 'Actions'
     ]
@@ -31,11 +33,14 @@ const ProduitContextProvider = ({ children }) => {
     ]
     
     const actions = [
-        {
-          icon: <TbEyeShare/>,
-          color: 'bg-green-500',
-          hanldleClick: () => console.log('Details')
-        },
+      {
+        icon: <TbEyeShare/>,
+        color: 'bg-green-500',
+        hanldleClick: (id) => {
+          console.log('Ca marche 1')
+          navigate("DetailsProd/" + id);
+        }
+      },
         {
           icon: <MdEdit />,
           color: 'bg-orange-500',
