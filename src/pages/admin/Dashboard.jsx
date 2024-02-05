@@ -6,7 +6,7 @@ import Filtre from "../../components/cards-et-filtre/Filtre";
 import Revenue from "./Revenue";
 import useSidebare from "../../utils/hooks/useSidebare";
 import Graphique2 from './graphique2/Graphique2'
-import ListeProd from "./ListeProd";
+import ListeProd from './ListeProd'
 
 
 const Dashboard = () => {
@@ -25,17 +25,22 @@ const Dashboard = () => {
           <Cards />
         </div>
       </div>
-      <div className="flex justify-between">
-        <div>
+
+      <div className='flex w-full'>
+        <div className='basis-[50%]'>
           <Revenue />
         </div>
-        <div><Graphique2 /></div>
+        <div className='basis-[50%]'>
+          <Graphique2 />
+        </div>
       </div>
-      <ListeProd />
 
+      <div>
+        <ListeProd />
+      </div>
+    
     </div>
-
-  );
-};
+  )
+}
 
 export default Dashboard;
