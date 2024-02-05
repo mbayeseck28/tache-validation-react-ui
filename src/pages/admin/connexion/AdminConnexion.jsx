@@ -27,11 +27,13 @@ const AdminConnexion = () => {
 
 
   return (
-    // <div className="w-full  h-screen flex justify-center items-center  bg-gray-100">
+
 
     <div className="w-full h-screen flex justify-center pt-12 pb-12 ">
 
         <form onSubmit={handleSubmit} class="bg-gray-800  w-screen w-[100%] w-1/2 min-w-80 max-w-24  h-[80%] hover:shadow-black shadow-md mx-auto mt-3 rounded px-8 pt-6 pb-8 mb-4 ">
+
+  
             <Title className='text-2x1 font-semibold mb-4 text-center text-white' children='Page Connexion'/>
             <div className="relative">
             <Label
@@ -96,7 +98,6 @@ const AdminConnexion = () => {
           
         </form>
     </div>
-    // </div>
   )
 }
 

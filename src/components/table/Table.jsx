@@ -15,7 +15,7 @@ const Tbody = ({tbody, actions}) => {
     return (
         <tbody className='bg-white'>
                 {tbody.map((td, index) => (
-                <tr className="text-gray-700">
+                <tr className="text-gray-700" key={index}>
                     <td className="px-4 py-3 font-semibold border text-ms">{td.id}</td>
                     {td.article ? 
                         <td className="px-4 py-3 border">
@@ -56,16 +56,14 @@ const Tbody = ({tbody, actions}) => {
                     </td> : null
                     }
                     {td.statut ?
-                    <td class="px-4 py-5 flex justify-center text-xl border-none">
+                    <td className="px-4 py-5 flex justify-center text-xl border-none">
                         {td.statut}
                     </td> : null
                     }
-                    
-
                     {actions ?
-                        <td class="px-4 py-3 text-ms font-semibold border text-center">
-                            {actions.map((action) => (
-                                <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
+                        <td className="px-4 py-3 text-ms font-semibold border text-center">
+                            {actions.map((action, index) => (
+                                <button key={index} className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
                             ))}
                         </td> : null
                     }
