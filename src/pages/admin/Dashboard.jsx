@@ -5,7 +5,7 @@ import Cards from "../../components/cards-et-filtre/Cards";
 import Filtre from "../../components/cards-et-filtre/Filtre";
 import Revenue from "./Revenue";
 import useSidebare from "../../utils/hooks/useSidebare";
-import Graphique2 from './graphique2/Graphique2'
+import Graphique2 from './graphique2/Graph'
 import ListeProd from './ListeProd'
 
 

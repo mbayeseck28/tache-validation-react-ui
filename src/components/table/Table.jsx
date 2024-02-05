@@ -60,6 +60,7 @@ const Tbody = ({tbody, actions}) => {
                         {td.statut}
                     </td> : null
                     }
+
                     {actions ?
                         <td className="px-4 py-3 text-ms font-semibold border text-center">
                             {actions.map((action, index) => (
