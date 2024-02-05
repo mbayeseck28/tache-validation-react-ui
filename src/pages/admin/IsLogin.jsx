@@ -9,6 +9,7 @@ import Dashboard from "./Dashboard";
 import Produits from "./Produits";
 import DetailsCategorieUseProvider from "../../components/categories/DetailsCategorieUseProvider";
 import DetailsProduits from "../../components/produits/DetailsProduits";
+import Profil from "./Profil";
 
 
 function IsLogin() {
@@ -20,6 +21,7 @@ function IsLogin() {
           <Sidebare />
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/profil" element={<Profil />} />
             <Route path="/categories" element={<CategoriesAdmin />} />
             <Route path="/produits/*" element={<Produits />} />
             <Route path='/produits/DetailsProd/:id' element={<DetailsProduits />} />

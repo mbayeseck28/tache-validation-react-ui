@@ -20,11 +20,11 @@ const SidebareContextProvider = ({ children }) => {
 
   const value = {
     open,
+    smallScreen,
     toggleSidebare,
     screenSize,
     setSmallScreen,
     setOpen,
-    smallScreen,
   };
 
   return <SidebareContext.Provider value={value}>{children}</SidebareContext.Provider>;

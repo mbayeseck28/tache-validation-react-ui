@@ -3,11 +3,13 @@ import { NavLink, useLocation } from "react-router-dom";
 import useSidebare from "../../utils/hooks/useSidebare";
 
 const SidebareLink = ({ menus, open }) => {
-  const {screenSize, setOpen, smallScreen} = useSidebare()
+  const location = useLocation();
+  const { screenSize, setOpen, smallScreen } = useSidebare();
+
   const handleSidebare = () => {
-    setOpen(!open)
-  }
-  const location = useLocation()
+    setOpen(!open);
+  };
+
   return (
     <div className="mt-4 flex flex-col gap-4 relative">
       {menus?.map((menu, i) => (
@@ -16,19 +18,17 @@ const SidebareLink = ({ menus, open }) => {
           onClick={!open && smallScreen <= 767 ? handleSidebare : screenSize}
           key={i}
           className={` ${
-            location.pathname === menu?.link
-              ? "bg-gray-200"
-              : ""
+            location.pathname === menu?.link ? "bg-gray-200" : ""
           } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-200 rounded-md`}
         >
           <div className={"text-xl"} size={20}>
             {menu?.icon}
           </div>
-          <h2 
-          
-         style={{transitionDelay: `${i + 3}00ms`}}
+          <h2
+            style={{ transitionDelay: `${i + 3}00ms` }}
             className={`whitespace-pre duration-500 ${
-              !open && `md:opacity-0   sm:translate-x-5 md:translate-x-20  overflow-hidden`
+              !open &&
+              `md:opacity-0   sm:translate-x-5 md:translate-x-20  overflow-hidden`
             }`}
           >
             {menu?.name}

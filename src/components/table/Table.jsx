@@ -74,7 +74,7 @@ const Tbody = ({tbody, actions}) => {
 
 const Table = ({thead, tbody, actions}) => {
   return (
-    <section className="container mx-auto  font-mono">
+    <section className=" mx-  font-mono">
         <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
           <div className="w-full overflow-x-auto">
             <table className="w-full">
