@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+
 import useSidebare from '../../utils/hooks/useSidebare'
 import HeaderTable from '../headerTable/HeaderTable';
 
