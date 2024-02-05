@@ -20,9 +20,9 @@ const Tbody = ({tbody, actions}) => {
                     {td.article ? 
                         <td className="px-4 py-3 border">
                         <div className="flex items-center text-sm">
-                        <div className="relative w-8 h-8 mr-3 rounded-full md:block">
+                        <div className="md:relative w-8 h-8 mr-3 rounded-full md:block">
                             <img className="object-cover w-full h-full rounded-full" src={td.article.src} alt="" loading="lazy" />
-                            <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                            <div className="md:absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                         </div>
                         <div>
                             <p className="font-semibold text-black">{td.article.nom}</p>
@@ -66,7 +66,7 @@ const Tbody = ({tbody, actions}) => {
                     }
                     
 
-                    {td.actions ?
+                    {actions ?
                         <td class="px-4 py-3 text-ms font-semibold border text-center">
                             {actions.map((action) => (
                                 <button className={`${action.color} p-1 text-white rounded ml-2`} onClick={action.hanldleClick}>{action.icon}</button>
@@ -81,7 +81,7 @@ const Tbody = ({tbody, actions}) => {
 
 const Table = ({thead, tbody, actions}) => {
   return (
-    <section className="container mx-auto font-mono">
+    <section className=" mx-  font-mono">
         <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
           <div className="w-full overflow-x-auto">
             <table className="w-full">
