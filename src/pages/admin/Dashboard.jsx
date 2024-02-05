@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <div
-      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4  `}
+      className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"} m-4 `}
     >
       <div className=" text-xl container font-bold ">
         <div className="flex justify-end">

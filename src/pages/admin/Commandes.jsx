@@ -6,24 +6,6 @@ const Commandes = () => {
   return (
     <CommandeContextProvider>
       <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
-      <CommandeList />
     </CommandeContextProvider>
   );
 };
