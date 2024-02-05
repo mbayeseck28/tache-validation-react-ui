@@ -1,15 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import useProduits from '../../utils/hooks/useProduits';
+
+import useSidebare from '../../utils/hooks/useSidebare'
+import HeaderTable from '../headerTable/HeaderTable';
 
 const DetailsProduits = () => {
     const {id} = useParams();
-    const { table2 } = useProduits();
-    const myProd = table2.filter((_, index) => index !== id)
+    const {open} = useSidebare()
   return (
-    <div>
-    {myProd.filter((_, index) => index !== id)}
-      
+    <div className={`${open ? "md:ml-[225px]" : "md:ml-[85px]"  } m-4  my-3 `}>
+      <HeaderTable title="Détail du produit" />
+      <h2>Id: </h2> {id}
     </div>
   )
 }
