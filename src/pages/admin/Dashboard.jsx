@@ -17,11 +17,11 @@ const Dashboard = () => {
           <Cards/>
         </div> 
       </div>
-    <div className='flex justify-between'>
-      <div>
+    <div className='flex w-full'>
+      <div className='basis-[50%]'>
         <Revenue />
       </div>
-      <div>
+      <div className='basis-[50%]'>
         <Graphique2 />
       </div>
     </div>
